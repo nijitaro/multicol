@@ -132,6 +132,7 @@
 	h1 {
 		padding: 60px 0;
 	}
+<<<<<<< HEAD
 	#githubLogo {
 		position: absolute;
 		right: 0;
@@ -140,6 +141,8 @@
 	#githubLogo a:hover {
 		opacity: 0.8;
 	}
+=======
+>>>>>>> 0fbc99e1408c57fe6110dd4bc87ee8c689a5e535
 	h2 {
 		font-size: 24px;
 		margin-bottom: 30px;
@@ -190,7 +193,10 @@
 		text-decoration: none;
 	}
 	#header {
+<<<<<<< HEAD
 		position: relative;
+=======
+>>>>>>> 0fbc99e1408c57fe6110dd4bc87ee8c689a5e535
 		margin-bottom: 60px;
 	}
 	#mainContent {
