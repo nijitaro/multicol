@@ -1,6 +1,8 @@
 MULTICOL
 ====================
 
+Example & Documents -> http://code.hokypoky.info/
+
 
 ダウンロード/設置方法：
 ---------------------
