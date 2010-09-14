@@ -1,7 +1,7 @@
 MULTICOL
 ====================
 
-Example & Documents : http://code.hokypoky.info/multicol/
+Example & Documents : [http://code.hokypoky.info/multicol/](http://code.hokypoky.info/multicol/)
 
 
 ダウンロード/設置方法：
