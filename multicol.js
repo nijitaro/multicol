@@ -1,33 +1,14 @@
 /**
  * @name multicol.js
  * @fileOverview
- * @version 1.1
+ * @version 1.2
  * @author <a href="mailto:imai@4digit.jp">Kotaro Imai</a> @ <a href="http://hokypoky.info">HOKYPOKY.</a>
  * @description
  * <p>WEBサイトで段組み行うことができるjQuery Plugin</p>
  * <p>(c) HOKYPOKY.info Licensed <a href="http://ja.wikipedia.org/wiki/GNU_General_Public_License">GNU General Public License</a>.</p>
  */
-if (typeof info == "undefined") {
-	/**
-	 * @namespace
-	 * @description
-	 * <p>namespace : info</p>
-	 */
-	var info = {};
-}
-if (typeof info.hokypoky == "undefined") {
-	/**
-	 * @namespace
-	 * @description
-	 * <p>namespace : info.hokypoky</p>
-	 */
-	info.hokypoky = {};
-}
-/**
- * @class Mutlicol
- */
-info.hokypoky.Multicol = new function () {
-	jQuery.fn.extend({
+(function($){
+	$.fn.extend({
 		/**
 		 * @function
 		 * @param {Number} colNum カラム数
@@ -42,10 +23,10 @@ info.hokypoky.Multicol = new function () {
 		multicol: function (arg) {
 			this.each(function(){
 				//初期値セット
-				var grid = parseInt($(this).css("line-height"));
+				var grid = parseInt($(this).css("line-height"), 10);
 				var colNum = (arg.colNum ? arg.colNum : 2);
 				var colMargin = (arg.colMargin ? arg.colMargin : 10);
-				var width = parseInt($(this).width());
+				var width = parseInt($(this).width(), 10);
 				var colWidth = ($(this).width() - colMargin*(colNum-1)) / colNum -0.1;
 				//要素が段組みにFITするよう整頓
 				$(this)
@@ -67,9 +48,9 @@ info.hokypoky.Multicol = new function () {
 					.css({width: colWidth})
 				.end();
 				//幅を1カラム分に細くしたときの全体の長さを取得
-				var height = parseInt($(this).height());
+				var height = parseInt($(this).height(), 10);
 				//行数整理(カラム数で丁度割り切れるようにする)
-				var remainder = (parseInt(height) / parseInt(grid)) % parseInt(colNum);
+				var remainder = (parseInt(height, 10) / parseInt(grid, 10)) % parseInt(colNum, 10);
 				if(remainder!=0) height = height + grid*(colNum-remainder);
 				//行数整理された後の高さをセット
 				$(this)
@@ -81,7 +62,7 @@ info.hokypoky.Multicol = new function () {
 					.wrapInner("<div class='multicolInner'></div>")
 				.end();
 				//multicolInnerをコピー
-				var contentClone =  $(this).html();
+				var contentClone = $(this).html();
 				$(this)
 					.css({
 						//全体の高さをカラム数で分割
@@ -97,7 +78,6 @@ info.hokypoky.Multicol = new function () {
 					var obj = $(contentClone).css({
 						//floatで配置
 						"float": i != (colNum-1) ? "left": "right",
-						//"float": i != (colNum-1) ? "left": "right",
 						//幅を1カラムの幅にセット
 						width: colWidth,
 						//margin-topを1カラム分ずつ引く
@@ -106,12 +86,14 @@ info.hokypoky.Multicol = new function () {
 						marginRight: i != (colNum-1) ? colMargin+"px": 0 + "px",
 						//はみ出る分を隠す
 						overflow: "hidden"
-					})
+					});
 					//元の要素に詰める
-					$(this).append(obj);
+					$(obj).appendTo(this);
 				}
 			});
+			// IE8用Hack
+			$(this).find("*").css("zoom","1");
 			return this;
 		}
 	});
-}
+})(jQuery);
