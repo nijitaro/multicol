@@ -1,0 +1,197 @@
+@charset "utf-8";
+/**
+ * style 
+ * (c) FOURDIGIT Inc.
+ *
+ * 1. import
+ * 2. html, body
+ * 3. HTMLtag, siteCommonClass
+ * 4. Layout
+ * 5. EachPageStyle
+ *
+ */
+
+/**
+ * 1. import
+ */
+@import "extention/init.css";
+@import "extention/util.css";
+@import "extention/accessibility.css";
+@import "extention/noscript.css";
+@import "extention/logtag.css";
+
+/**
+ * 2. html, body
+ */
+	* { outline: none; }
+	html, body {
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		border-style: none;
+		background-color: #fff;
+		background-image: url(../../imgs/header_bg.gif);
+		background-repeat: no-repeat;
+		background-position: center top;
+		color: #333333;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	table { font-size: 100%; }
+
+/**
+ * 3. HTMLtag, siteCommonClass
+ */
+/* heading */
+	h1 {}
+
+/* anchor */
+	a {
+		background-color: transparent;
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position: top left;
+		color: #00f;
+		text-decoration: none;
+	}
+	a:visited {}
+	a:hover {
+		color: #f00;
+		background-position: bottom right;
+		text-decoration: none;
+	}
+	a:active {}
+
+/* cap */
+	.cap,
+	.caption {
+		padding-top: 5px;
+		background: none;
+		color: #666666;
+		font-size: 10px;
+		line-height: 15px;
+	}
+	.caption {
+		padding-top: 0px;
+	}
+
+/* footerNavi */
+	/*base*/
+	#footerNavi,
+	#footerNavi td {
+		color: #666666;
+		font-size: 10px;
+		line-height: 14px;
+	}
+	/*df*/
+	#footerNavi strong,
+	#footerNavi em,
+	#footerNavi span,
+	#footerNavi a {
+		display: inline;
+		background: none;
+		color: #003593;
+		text-decoration: none;
+	}
+	/*ov*/
+	#footerNavi strong,
+	#footerNavi a:hover {
+		background: none;
+		color: #f60;
+		text-decoration: underline;
+	}
+	/*off*/
+	#footerNavi em,
+	#footerNavi span {
+		font-style: normal;
+		background: none;
+		color: #cccccc;
+		text-decoration: none;
+	}
+
+/**
+ * 4. Layout
+ */
+	body.base #container {
+		width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: transparent;
+		background-image: url(../imgs/space.gif);
+		background-repeat: repeat-y;
+		background-position: center top;
+		text-align: left;
+	}
+/**
+ * 5. EachPageStyle
+ */
+	h1 {
+		padding: 60px 0;
+	}
+	h2 {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+	p, h3 {
+		margin-bottom: 18px;
+	}
+	h3 {
+		font-weight: bold;
+	}
+	dd {
+		padding-left: 1em;
+		padding-bottom: 10px;
+	}
+	pre {
+		margin-bottom: 24px;
+	}
+	.multicol {
+		margin-bottom: 60px;
+	}
+	.exampleSrc {
+		padding: 10px;
+		border: 1px solid #ccc;
+		margin-bottom: 18px;
+	}
+	.sampleBtn {
+		font-size: 10px;
+		line-height: 14px;
+	}
+	.sampleCode {
+		border-left: 2px solid #ccc;
+		padding-left: 20px;
+	}
+	#HOKYPOKY {
+		position: absolute;
+		right: 20px;
+		top: 10px;
+	}
+	#dlBtn {
+		float: right;
+		padding: 10px;
+		background: #f5f5f5;
+		border: 1px solid #00f;
+	}
+	#dlBtn a {
+		font-size: 14px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	#header {
+		margin-bottom: 60px;
+	}
+	#mainContent {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-justify: inter-ideograph;
+		text-align: justify;
+	}
+	#footer {
+		margin-bottom: 30px;
+		text-align: right;
+	}
+	#sample1 {width: 900px;}

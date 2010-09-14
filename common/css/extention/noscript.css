@@ -1,0 +1,16 @@
+@charset "utf-8";
+/**
+ * noscript
+ * (c) FOURDIGIT Inc.
+ */
+	#noscript {
+		margin-bottom: 10px;
+		border-bottom: 1px solid #999;
+		padding: 20px;
+		background: #fff;
+		color: #000;
+		font-size: 14px;
+	}
+	#noscript span {
+		color: #cc0000;
+	}
