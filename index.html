@@ -53,6 +53,7 @@ JavaScriptを無効のままご覧いただいた場合には一部機能がご�
 </div>
 <div id="header">
 <h1><img src="imgs/logo.gif" alt ="MULTICOL" title="MULTICOL" width="245" height="33" /></h1>
+<div id="githubLogo"><a href="http://github.com/nijitaro/multicol"><img src="imgs/github.png" alt ="Show github page" title="Show github page" width="120" height="53" /></a></div>
 <div id="dlBtn"><a href="#documents">Download &amp; Documents ↓</a></div>
 <p><strong>MULTICOL.</strong> はHTMLで雑誌のような美しい段組みレイアウトを実現するだけのシンプルなjQueryプラグインです。<br />
 もちろん、日本製のプラグインなので日本語もきれいに段組みにします。</p>
@@ -120,10 +121,11 @@ CODE:<span id="sample3Btn" class="sampleBtn">(<a href="javascript:(function(){$(
 </div>
 </div><!-- / #article -->
 <div class="exampleSrc" id="documents">
+<p style="float:right;"><a href="http://github.com/nijitaro/multicol"><img src="imgs/github.png" alt ="Show github page" title="Show github page" width="120" height="53" /></a></p>
 <h3>ダウンロード/設置方法：</h3>
 <p>
 jQueryをDL : <a href="http://jquery.com/">jquery.js</a><br />
-muticol.jsをDL : <a href="http://github.com/nijitaro/multicol/raw/master/multicol.min.js">multicol.min.js</a>
+muticol.jsをDL : <a href="http://code.hokypoky.info/multicol/multicol.min.js">multicol.min.js</a>
 </p>
 <pre class="sampleCode"><code>&lt;script type="text/javascript" src="path/to/jquery.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="path/to/multicol.min.js"&gt;&lt;/script&gt;</code></pre>
@@ -151,8 +153,8 @@ selector p, selector h2, selector h3, selector h4, selector h5, selector h6 {
 <h3>DEVELOPERS：</h3>
 <p><a href="http://ja.wikipedia.org/wiki/GNU_General_Public_License" target="_blank">GNU General Public License</a>に基づき改変、再配布などは自由に行ってくだささい。</p>
 <ul style="margin-bottom: 30px;">
-<li>- <a href="http://github.com/nijitaro/multicol/raw/master/multicol.js">開発者用ソース</a></li>
-<li>- <a href="http://hokypoky.info/files/multicol/jsdoc/">旧JsDoc</a> (最新版は保留しています)</li>
+<li>- <a href="http://code.hokypoky.info/multicol/multicol.js">開発者用ソース</a></li>
+<li>- <a href="http://code.hokypoky.info/multicol/jsdoc/">旧JsDoc</a> (最新版は保留しています)</li>
 </ul>
 <h3>HISTORY：</h3>
 <ul style="margin-bottom: 30px;">
@@ -174,9 +176,7 @@ selector p, selector h2, selector h3, selector h4, selector h5, selector h6 {
 <div id="disqus_thread" style="width: 875px"></div><script type="text/javascript" src="http://disqus.com/forums/hokypoky/embed.js"></script><noscript><a href="http://hokypoky.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 <script type="text/javascript">
 //<![CDATA[
-(function() {
-  var disqus_url = 'http://hokypoky.info/files/multicol/ ';
-  
+(function() {  
 	var links = document.getElementsByTagName('a');
 	var query = '?';
 	for(var i = 0; i < links.length; i++) {
