@@ -1,7 +1,7 @@
 {
-    "name": "jquery.multicol",
+    "name": "multicol",
     "title": "MULTICOL.",
-    "version": "1.2",
+    "version": "1.2.1",
     "author": {
         "name": "Kotaro Imai",
         "url": "http://hokypoky.info"
@@ -9,10 +9,13 @@
     "dependencies": {
         "jquery": ">=1.4.2"
     },
-    "licenses": [{"url": "http://www.gnu.org/licenses/gpl.html"}],
-    "files": ["js/jquery.multicol.js"],
+    "licenses": [{
+        "type": "GPLv2", 
+        "url": "http://opensource.org/licenses/gpl-2.0"
+    }],
     "description": "MULTICOL. はHTMLで雑誌のような美しい段組みレイアウトを実現するだけのシンプルなjQueryプラグインです。もちろん、日本製のプラグインなので日本語もきれいに段組みにします。",
-    "keywords": ["layout"],
+    "keywords": ["ui","layout"],
     "homepage": "https://github.com/nijitaro/multicol",
-    "docs": "http://code.hokypoky.info/multicol/"
+    "docs": "http://code.hokypoky.info/multicol/",
+    "demo": "http://code.hokypoky.info/multicol/"
 }
