@@ -1,6 +1,8 @@
 MULTICOL
 ====================
 
+[![Gitter chat](https://badges.gitter.im/nijitaro/multicol.png)](https://gitter.im/nijitaro/multicol)
+
 Example & Documents : [http://code.hokypoky.info/multicol/](http://code.hokypoky.info/multicol/)
 
 
